@@ -1,0 +1,143 @@
+/* Write your CSS */
+.calc1 {
+    /*width: 100%;*/
+    width: 30px;
+    position: absolute;
+    top: 220px;
+    /*height: 70px;*/
+    height: 30px;
+    /*left: 0px;*/
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    z-index: 1000;
+}
+#calc {
+    position: absolute;
+    /* top: 490px; */ 
+    left: 0px;
+    /*width: 70px;*/
+    width: 100%;
+    cursor: pointer;
+    /*height: 70px;*/
+    height: 100%;
+    /*background: url(../css/images/calc.png)*/ /*no-repeat scroll 0 0;*/;
+    background-size: 100% 100%;
+}
+#calculatorsource {
+    display: none;
+    position: absolute;
+    width: 266px;
+    height: 232px;
+    z-index: 1001;
+    cursor: move;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /*border: 1px solid #063A21; */
+}
+#calClose {
+    background: url(../css/images/close_btn.png) no-repeat;
+    background-size: contain;
+    width: 35px;
+    position: absolute;
+    height: 28px;
+    top: -13px;
+    left: 271px;
+    z-index: 10;
+    cursor: pointer;
+}
+#rim {
+    width: 288px;
+    height: 251px;
+    background: #fff;
+}
+#keypad {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 230px;
+    left: 10px;
+    /* margin: 15px 4px 4px 4px; */
+}
+#keypad > div.horizontal.display {
+    border: none;
+    margin-bottom: -2px;
+    background-color: #000;
+}
+#keypad > div {
+    height: 39px;
+    font-size: 22px;
+    width: 100%;
+    overflow: hidden;
+    /* border-bottom: 1px solid black; */
+}
+#keypad > div.display > input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+    height: 51px;
+    width: 264px;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 2px;
+    pointer-events: none;
+}
+#keypad > div > div {
+    padding-top: 5px;
+    border: 1px solid #575757;
+    width: 66px;
+    text-align: center;
+    background-color: #CFD0D2;
+    color: #272727;
+    display: inline-block;
+    height: 95%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.mainCal{
+    color: #426AB2;
+     font-size: 23px;
+     font-weight: 600;
+}
+.key {
+    border-radius: 0px;
+    width: 38px;
+    height: 40px;
+    background: #fff;
+    float: left;
+    display: table;
+    margin: 3px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: #000!important;
+}
+#keypad > div > div.control-key {
+    background-color: #C1C2C4;
+    color: #1D1D1D;
+}
+#keypad > div > div.operation-key {
+    background-color: #426AB2;
+    color: #fff;
+    width: 68px;
+}
+#empty {
+    padding-top: 15px !important;
+    /* border-right: 1px solid !important; */
+    width: 132px !important;
+    text-align: center !important;
+    background-color: #CFD0D2 !important;
+    color: #272727 !important;
+    display: inline-block !important;
+    height: 95% !important;
+    float: left !important;
+}
+#keypad > div > div.double-wide {
+    width: 132px;
+}
